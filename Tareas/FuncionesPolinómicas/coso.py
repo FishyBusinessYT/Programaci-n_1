@@ -1,9 +1,9 @@
 def get(text):
-    result = int
+    result = float
     while True:
         try:
             result = input(text)
-            result = int(result)
+            result = float(result)
             break
         except ValueError:
             if result == "exit":

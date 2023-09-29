@@ -17,7 +17,7 @@ def main():
 
 def get(text, itype):
     os.system("cls")
-    result = int
+    result = itype
     while True:
         try:
             result = itype(input(text))
