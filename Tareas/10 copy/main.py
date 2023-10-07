@@ -47,7 +47,7 @@ for p in team:
         countries.add(p[3])
 
     if p[0] in suspended:
-        team.remove(p)
+        team.remove(p)  
     elif p[2] >= 25:
         tooOld.add(p)
         team.remove(p)
