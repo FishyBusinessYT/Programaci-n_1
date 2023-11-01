@@ -60,3 +60,27 @@ def update(i) -> None:
         for x in range(10):
             if image[52 + 26*y][283 + 26*x] != 0:
                 boolMatrix[y][x] = True
+
+sleep(4)
+
+pieces = {
+    0/7: "None",
+    1/7: "Line",
+    2/7: "Box",
+    3/7: "S",
+    4/7: "Z",
+    5/7: "J",
+    6/7: "L",
+    7/7: "T"
+}
+
+for i in range(10):
+    click(0.5, i%2)
+    sleep(0.1)
+    update(str(i))
+
+    print(boolMatrix)
+    print("Held:", pieces[heldPiece])
+    print("Next:", pieces[nextPiece])
+    print("Current:", pieces[currentPiece])
+    print()

@@ -1,4 +1,5 @@
 from win32api import mouse_event, SetCursorPos
+
 def click(normalizedpos, left):
     SetCursorPos((int(259*normalizedpos) + 843, 945))
     if left:
